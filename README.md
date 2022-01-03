@@ -1,6 +1,14 @@
 # name-detection
 
-## Installation requirements and installation guides:
+## Installation requirements and installation guides
+
+Upon installation of Python 3, the required modules can be installed through pip package manager or [Anaconda](https://docs.anaconda.com/anaconda/install/index.html). If Python 2 is also installed on the device, then you need to specify `pip3` to make sure the packages are properly installed on your desired Python version (Python 3).
+
+* [Python 3](https://www.python.org/downloads/)
+* [Pandas](https://pandas.pydata.org/docs/getting_started/install.html)
+* [Numpy](https://numpy.org/install/)
+* [Transformers](https://huggingface.co/docs/transformers/installation)
+
 
 ### Installing through Anaconda
 
@@ -10,19 +18,12 @@ Anaconda is a python environment manager through which you can create, activate,
 * Step 2: Launch Anaconda-Navigator, [doc](https://docs.anaconda.com/anaconda/user-guide/getting-started/)
 * Step 3: Create a python3 environment, [doc](https://docs.anaconda.com/anaconda/navigator/tutorials/create-python35-environment/), manage an environment, [doc](https://docs.anaconda.com/anaconda/navigator/tutorials/manage-environments/)
 * Step 4: Installing the required packages on the environemt just created, [doc](https://docs.anaconda.com/anaconda/navigator/tutorials/manage-packages/) ([Here](https://docs.anaconda.com/anaconda/navigator/tutorials/pandas/) is an example of creating an environment and installing Pandas package on it)
-* Step 5: Launch a python IDE (Jupyter notebook, Spyder, or Pycharm) through Anaconda Navigator.
+* Step 5: Launch a python IDE (Jupyter notebook, Spyder, or Pycharm) through Anaconda Navigator homepage.
 * Step 6: Open the code file through the python IDE and run the code in that environment.
 
 ### Installing through Python
 
 While Anaconda offers an easier way for begginers to interact with python and create, and manage environments, python can also be installed through the [python website](https://www.python.org/downloads/).
-
-Upon installation of Python 3, the required modules can be installed through pip package manager or [Anaconda](https://docs.anaconda.com/anaconda/install/index.html). If Python 2 is also installed on the device, then you need to specify `pip3` to make sure the packages are properly installed on your desired Python version (Python 3).
-
-* [Python 3](https://www.python.org/downloads/)
-* [Pandas](https://pandas.pydata.org/docs/getting_started/install.html)
-* [Numpy](https://numpy.org/install/)
-* [Transformers](https://huggingface.co/docs/transformers/installation)
 
 ## Input and Output
 
