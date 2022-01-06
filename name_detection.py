@@ -33,6 +33,7 @@ for file_name in os.listdir('./data'):
               name_count += 1
       text_without_name += (text + '\n')
     text_file = open('./output/'+file_name[:len(file_name)-4]+'-out.txt', "w")
+    print(file_name, " processed.\n")
     n = text_file.write(text_without_name)
     text_file.close()
 
