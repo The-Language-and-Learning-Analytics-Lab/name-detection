@@ -28,6 +28,7 @@ In order for the code to run:
 * Input transcripts should be included in `./data` folder in the same directory as the code file.
 * Output transcripts should be included in `./output` folder in the same directory as the code file.
 * Check that these two folders are created prior to running the code. The data folder should have the files you intend to de-identify. The output folder would be empty.
+* **Note.** If the repository folder is downloaded, this folder already satisfies the requirements above. 
 
 ## Running the code
 With the terminal still open, navigate to the path where the code and data and output folders are located.
@@ -46,7 +47,7 @@ With the terminal still open, navigate to the path where the code and data and o
   ```
   ls
   ```
-  You should see the .py code and the respective necessary folders in the directory. If you don't see this repeat Steps 1-3.
+  You should see a list of all of files in the folder. This should include the .py code and the respective necessary folders in the directory. If you don't see this repeat Steps 1-3.
 * Step 4: Run the code. Type in the command line:
   ```
   python3 name_detection.py
