@@ -2,7 +2,7 @@
 
 ## Installation requirements and installation guides
 
-These instructions are for identifying names in your text and de-identifying the text. The code works by using the an open source [BERT-based name recognition algorithm](https://huggingface.co/dslim/bert-base-NER). The code will detect each word. If the word is categorized as a person AND it is also not found in the dictionary, it will be replaced with the nomeclature: name_# (e.g., name_1, name_2).
+These instructions are for identifying names in your text and de-identifying the text. The code works by using an open source [BERT-based named entity recognition algorithm](https://huggingface.co/dslim/bert-base-NER). The code will detect each word. If the word is categorized as a person, this new word (i.e., name) will be added to the dictionary and then replaced by the nomeclature: name_# (e.g., name_1, name_2). This process will be repeated for the next name. If the name is found in the exisiting dictionary, it will be assigned the previously generated name code. If the name is not found, it will be added to the dictionary and assigned a new name code.
 
 You will work mostly in the terminal with the exception of downloading Python directly from the Python website.
 
