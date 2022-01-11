@@ -53,7 +53,7 @@ With the terminal still open, navigate to the path where the code and data and o
   python3 name_detection.py
   ```
 ## Resulting Output
-The code with beggining running. The transcripts will appear in the terminal as they are being de-identified. The sample transcripts will take approximately 2 minutes to complete.
+The code with beggining running. The transcripts will appear in the terminal as they are being de-identified. The sample transcripts will take approximately two minutes to complete.
 
 #### Anonymized Transcripts
 
