@@ -2,7 +2,9 @@
 
 ## Installation requirements and installation guides
 
-These instructions are for identifying names in your text and de-identifying the text. You will work mostly in the terminal with the exception of downloading Python directly from the Python website.
+These instructions are for identifying names in your text and de-identifying the text. The code works by using the an open source [BERT-based name recognition algorithm](https://huggingface.co/dslim/bert-base-NER). The code will detect each word. If the word is categorized as a person AND it is also not found in the dictionary, it will be replaced with the nomeclature: name_# (e.g., name_1, name_2).
+
+You will work mostly in the terminal with the exception of downloading Python directly from the Python website.
 
 * Step 1: Download [Python 3](https://www.python.org/downloads/macos/), the code has been run and tested on version 3.9.1 so it is suggested this version is used. Follow instructions on installer to complete Python installation.
 * Step 2: Open Terminal by typing “Terminal” in search bar.
