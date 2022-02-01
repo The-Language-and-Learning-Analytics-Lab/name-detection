@@ -9,14 +9,16 @@ name_count = 1
 name_dict = {}
 text_out = []
 for file_name in os.listdir('./data'):
+  if file_name[0] == '.':
+    continue
   text_out = []
   data = pd.read_csv('./data/'+file_name)
-  
+  print(file_name, " opened \n")
   for i in data['transcript']:
-    print(i)
+    #print(i)
     text = i
     ner = nlp(i, grouped_entities=True)
-    print(ner)
+    #print(ner)
     text = text.lower()
     if ner != []:
       for j in ner:
