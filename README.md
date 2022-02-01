@@ -2,7 +2,9 @@
 
 ## Installation requirements and installation guides
 
-These instructions are for identifying names in your text and de-identifying the text. You will work mostly in the terminal with the exception of downloading Python directly from the Python website.
+These instructions are for identifying names in your text and de-identifying the text. The code works by using an open source [BERT-based named entity recognition algorithm](https://huggingface.co/dslim/bert-base-NER). The code will detect each word. If the word is categorized as a person, this new word (i.e., name) will be added to the dictionary and then replaced by the nomeclature: name_# (e.g., name_1, name_2). This process will be repeated for the next name. If the name is found in the exisiting dictionary, it will be assigned the previously generated name code. If the name is not found, it will be added to the dictionary and assigned a new name code.
+
+You will work mostly in the terminal with the exception of downloading Python directly from the Python website.
 
 * Step 1: Download [Python 3](https://www.python.org/downloads/macos/), the code has been run and tested on version 3.9.1 so it is suggested this version is used. Follow instructions on installer to complete Python installation.
 * Step 2: Open Terminal by typing “Terminal” in search bar.
@@ -28,6 +30,7 @@ In order for the code to run:
 * Input transcripts should be included in `./data` folder in the same directory as the code file.
 * Output transcripts should be included in `./output` folder in the same directory as the code file.
 * Check that these two folders are created prior to running the code. The data folder should have the files you intend to de-identify. The output folder would be empty.
+* **Note.** If the repository folder is downloaded, this folder already satisfies the requirements above. 
 
 ## Running the code
 With the terminal still open, navigate to the path where the code and data and output folders are located.
@@ -46,13 +49,13 @@ With the terminal still open, navigate to the path where the code and data and o
   ```
   ls
   ```
-  You should see the .py code and the respective necessary folders in the directory. If you don't see this repeat Steps 1-3.
+  You should see a list of all of files in the folder. This should include the .py code and the respective necessary folders in the directory. If you don't see this repeat Steps 1-3.
 * Step 4: Run the code. Type in the command line:
   ```
   python3 name_detection.py
   ```
 ## Resulting Output
-The code with beggining running. The transcripts will appear in the terminal as they are being de-identified. The sample transcripts will take approximately 2 minutes to complete.
+The code with beggining running. The transcripts will appear in the terminal as they are being de-identified. The sample transcripts will take approximately two minutes to complete.
 
 #### Anonymized Transcripts
 
